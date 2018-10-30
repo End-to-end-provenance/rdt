@@ -108,7 +108,7 @@ prov.init <- function(prov.dir = NULL, overwrite = TRUE, annotate.inside.functio
   }
   
   # Save name of provenance collection tool.
-  .ddg.set("ddg.tool.name", "RDataTracker")
+  .ddg.set("ddg.tool.name", "rdt")
 
   # Save hash algorithm
   .ddg.set("ddg.hash.algorithm", hash.algorithm)
