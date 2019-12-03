@@ -1,7 +1,7 @@
 Package: rdt
 Title: Provenance Collector
-Version: 3.2
-Date: 2019-09-03
+Version: 3.2.1
+Date: 2019-12-02
 Authors@R: c( person( "Emery", "Boose", role = "aut",
                       email = "boose@fas.harvard.edu"),
               person("Barbara", "Lerner", role = c("aut", "cre"),
@@ -53,6 +53,8 @@ Imports:
   jsonlite, 
   knitr,
   methods,
+  provSummarizeR,
+  provViz (>= 1.0.6),
   rmarkdown,
   sessioninfo,
   stringi,
@@ -61,8 +63,6 @@ Imports:
   utils,
   XML
 Suggests: 
-  testthat,
-  provSummarizeR,
-  provViz (>= 1.0.6)
+  testthat
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
