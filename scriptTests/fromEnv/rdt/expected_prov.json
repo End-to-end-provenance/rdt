@@ -11,7 +11,6 @@
 			"rdt:json.version": "2.3",
 			"rdt:args.names": [
 				"overwrite",
-				"details",
 				"annotate.inside.functions",
 				"first.loop",
 				"max.loops",
@@ -20,15 +19,13 @@
 			],
 			"rdt:args.values": [
 				"TRUE",
-				"TRUE",
-				"TRUE",
+				"FALSE",
 				"1",
-				"1",
+				"0",
 				"10",
 				"FALSE"
 			],
 			"rdt:args.types": [
-				"logical",
 				"logical",
 				"logical",
 				"integer",
@@ -41,9 +38,9 @@
 
 	"activity" : {
 		"rdt:p1": {
-			"rdt:name": "Warning.R",
+			"rdt:name": "Console",
 			"rdt:type": "Start",
-			"rdt:elapsedTime": "0.886",
+			"rdt:elapsedTime": "0.823",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -51,39 +48,19 @@
 			"rdt:endCol": "NA"
 		},
 		"rdt:p2": {
-			"rdt:name": "a <- 1",
+			"rdt:name": "a <- rep(x, 5)",
 			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.139",
+			"rdt:elapsedTime": "0.066",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": 1,
 			"rdt:startCol": 1,
 			"rdt:endLine": 1,
-			"rdt:endCol": 6
+			"rdt:endCol": 14
 		},
 		"rdt:p3": {
-			"rdt:name": "warning(\"foo\", call.=FALSE)",
-			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.109",
-			"rdt:scriptNum": 1,
-			"rdt:startLine": 2,
-			"rdt:startCol": 1,
-			"rdt:endLine": 2,
-			"rdt:endCol": 27
-		},
-		"rdt:p4": {
-			"rdt:name": "b <- 2",
-			"rdt:type": "Operation",
-			"rdt:elapsedTime": "0.073",
-			"rdt:scriptNum": 1,
-			"rdt:startLine": 3,
-			"rdt:startCol": 1,
-			"rdt:endLine": 3,
-			"rdt:endCol": 6
-		},
-		"rdt:p5": {
-			"rdt:name": "Warning.R",
+			"rdt:name": "Console",
 			"rdt:type": "Finish",
-			"rdt:elapsedTime": "0.005",
+			"rdt:elapsedTime": "0.094",
 			"rdt:scriptNum": 1,
 			"rdt:startLine": "NA",
 			"rdt:startCol": "NA",
@@ -94,36 +71,25 @@
 
 	"entity" : {
 		"rdt:d1": {
-			"rdt:name": "a",
-			"rdt:value": "1",
-			"rdt:valType": "{\"container\":\"vector\", \"dimension\":[1], \"type\":[\"numeric\"]}",
-			"rdt:type": "Data",
+			"rdt:name": "x",
+			"rdt:value": "data/1-x.csv",
+			"rdt:valType": "{\"container\":\"matrix\", \"dimension\":[5,20], \"type\":[\"integer\"]}",
+			"rdt:type": "Snapshot",
 			"rdt:scope": "R_GlobalEnv",
-			"rdt:fromEnv": false,
+			"rdt:fromEnv": true,
 			"rdt:hash": "",
-			"rdt:timestamp": "",
+			"rdt:timestamp": "2020-07-03T16.15.42EDT",
 			"rdt:location": ""
 		},
 		"rdt:d2": {
-			"rdt:name": "warning.msg",
-			"rdt:value": " foo",
-			"rdt:valType": "{\"container\":\"vector\", \"dimension\":[1], \"type\":[\"character\"]}",
-			"rdt:type": "Exception",
-			"rdt:scope": "ddg.library",
-			"rdt:fromEnv": false,
-			"rdt:hash": "",
-			"rdt:timestamp": "",
-			"rdt:location": ""
-		},
-		"rdt:d3": {
-			"rdt:name": "b",
-			"rdt:value": "2",
-			"rdt:valType": "{\"container\":\"vector\", \"dimension\":[1], \"type\":[\"numeric\"]}",
-			"rdt:type": "Data",
+			"rdt:name": "a",
+			"rdt:value": "data/2-a.txt",
+			"rdt:valType": "{\"container\":\"vector\", \"dimension\":[500], \"type\":[\"integer\"]}",
+			"rdt:type": "Snapshot",
 			"rdt:scope": "R_GlobalEnv",
 			"rdt:fromEnv": false,
 			"rdt:hash": "",
-			"rdt:timestamp": "",
+			"rdt:timestamp": "2020-07-03T16.15.42EDT",
 			"rdt:location": ""
 		},
 
@@ -133,16 +99,16 @@
 			"rdt:operatingSystem": "macOS Catalina 10.15.5",
 			"rdt:language": "R",
 			"rdt:langVersion": "R version 4.0.0 (2020-04-24)",
-			"rdt:script": "[DIR]/Warning.R",
-			"rdt:scriptTimeStamp": "2019-01-10T13.56.36EST",
-			"rdt:scriptHash": "225947b0ae12c9f6b79c995a6b255b9d",
-			"rdt:totalElapsedTime": "1.212",
+			"rdt:script": "console.R",
+			"rdt:scriptTimeStamp": "2020-07-03T16.15.42EDT",
+			"rdt:scriptHash": "",
+			"rdt:totalElapsedTime": "0.983",
 			"rdt:sourcedScripts": "",
 			"rdt:sourcedScriptTimeStamps": "",
 			"rdt:sourcedScriptHashes": "",
 			"rdt:workingDirectory": "[DIR]/rdt",
-			"rdt:provDirectory": "[DIR]/rdt/prov_Warning",
-			"rdt:provTimestamp": "2020-07-03T16.18.19EDT",
+			"rdt:provDirectory": "[DIR]/rdt/prov_console",
+			"rdt:provTimestamp": "2020-07-03T16.15.41EDT",
 			"rdt:hashAlgorithm": "md5"
 		},
 
@@ -228,29 +194,20 @@
 		"rdt:pp2": {
 			"prov:informant": "rdt:p2",
 			"prov:informed": "rdt:p3"
-		},
-		"rdt:pp3": {
-			"prov:informant": "rdt:p3",
-			"prov:informed": "rdt:p4"
-		},
-		"rdt:pp4": {
-			"prov:informant": "rdt:p4",
-			"prov:informed": "rdt:p5"
 		}
 	},
 
 	"wasGeneratedBy" : {
 		"rdt:pd1": {
 			"prov:activity": "rdt:p2",
-			"prov:entity": "rdt:d1"
-		},
-		"rdt:pd2": {
-			"prov:activity": "rdt:p3",
 			"prov:entity": "rdt:d2"
-		},
-		"rdt:pd3": {
-			"prov:activity": "rdt:p4",
-			"prov:entity": "rdt:d3"
+		}
+	},
+
+	"used" : {
+		"rdt:dp1": {
+			"prov:entity": "rdt:d1",
+			"prov:activity": "rdt:p2"
 		}
 	}
 }
