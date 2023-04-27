@@ -15,6 +15,8 @@ y <- x+2
 x
 y
 
+z <- 1
+
 ```
 
 Testing ggplot with RDataTracker
@@ -22,15 +24,17 @@ Testing ggplot with RDataTracker
 library(ggplot2)
 p<- ggplot(pressure, aes(x=temperature, y=pressure))
 p
+z <- z + 1
 
 ```
 Here's another chunk!
 
 
-```{r}
+```{r, details = TRUE}
 data(iris)
 x <- iris[,1]
 y <- iris[,2]
 summary(lm(y~x))
+n <- z + z
 
 ```
